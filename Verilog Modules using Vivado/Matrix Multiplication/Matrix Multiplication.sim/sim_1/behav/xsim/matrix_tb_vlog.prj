@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../Matrix Multiplication.srcs/sources_1/new/counter_g.v" \
+"../../../../../generic mac/generic mac.srcs/sources_1/new/mac_generic.v" \
+"../../../../Matrix Multiplication.srcs/sources_1/new/matrix_multiplier.v" \
+"../../../../Matrix Multiplication.srcs/sources_1/new/matrix_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

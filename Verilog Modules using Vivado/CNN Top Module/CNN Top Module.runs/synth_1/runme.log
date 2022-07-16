@@ -1,0 +1,407 @@
+
+*** Running vivado
+    with args -log cnn_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cnn_module.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cnn_module.tcl -notrace
+Command: synth_design -top cnn_module -part xc7a200tffg1156-3
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci
+
+INFO: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_0' (customized with software release 2017.4) has a different revision in the IP Catalog. * Current project part 'xc7a200tffg1156-3' and the part 'xc7k70tfbv676-1' used to customize the IP 'blk_mem_gen_0' do not match.
+INFO: [IP_Flow 19-2162] IP 'c_counter_binary_0' is locked:
+* IP definition 'Binary Counter (12.0)' for IP 'c_counter_binary_0' (customized with software release 2017.4) has a different revision in the IP Catalog. * Current project part 'xc7a200tffg1156-3' and the part 'xc7k70tfbv676-1' used to customize the IP 'c_counter_binary_0' do not match.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tffg1156-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26748
+WARNING: [Synth 8-2507] parameter declaration becomes local in mux_g with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/mux_generic/mux_generic.srcs/sources_1/new/mux_g.v:29]
+WARNING: [Synth 8-2507] parameter declaration becomes local in slide_window_conv with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Sliding Window Convolution/Sliding Window Convolution.srcs/sources_1/new/slide_window_conv.v:28]
+WARNING: [Synth 8-2507] parameter declaration becomes local in slide_window_conv with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Sliding Window Convolution/Sliding Window Convolution.srcs/sources_1/new/slide_window_conv.v:29]
+WARNING: [Synth 8-2507] parameter declaration becomes local in slide_window_conv with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Sliding Window Convolution/Sliding Window Convolution.srcs/sources_1/new/slide_window_conv.v:30]
+WARNING: [Synth 8-2507] parameter declaration becomes local in cnn_module with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.srcs/sources_1/new/cnn_module.v:40]
+WARNING: [Synth 8-2507] parameter declaration becomes local in cnn_module with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.srcs/sources_1/new/cnn_module.v:41]
+WARNING: [Synth 8-2507] parameter declaration becomes local in cnn_module with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.srcs/sources_1/new/cnn_module.v:42]
+WARNING: [Synth 8-2507] parameter declaration becomes local in cnn_module with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.srcs/sources_1/new/cnn_module.v:43]
+WARNING: [Synth 8-2507] parameter declaration becomes local in cnn_module with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.srcs/sources_1/new/cnn_module.v:44]
+WARNING: [Synth 8-2507] parameter declaration becomes local in cnn_module with formal parameter declaration list [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.srcs/sources_1/new/cnn_module.v:45]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1164.305 ; gain = 57.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cnn_module' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.srcs/sources_1/new/cnn_module.v:26]
+	Parameter In_d_W bound to: 8 - type: integer 
+	Parameter In_Add_W bound to: 4 - type: integer 
+	Parameter R_N_Conv bound to: 5 - type: integer 
+	Parameter C_N_Conv bound to: 5 - type: integer 
+	Parameter R_F_Conv bound to: 3 - type: integer 
+	Parameter C_F_Conv bound to: 3 - type: integer 
+	Parameter P_Conv bound to: 0 - type: integer 
+	Parameter S_Conv bound to: 1 - type: integer 
+	Parameter R_Pool_In bound to: 3 - type: integer 
+	Parameter C_Pool_In bound to: 3 - type: integer 
+	Parameter R_Pool_Area bound to: 2 - type: integer 
+	Parameter C_Pool_Area bound to: 2 - type: integer 
+	Parameter P_Pool bound to: 0 - type: integer 
+	Parameter S_Pool bound to: 1 - type: integer 
+	Parameter Timeperiod bound to: 10 - type: integer 
+	Parameter R_Conv_Out bound to: 3 - type: integer 
+	Parameter C_Conv_Out bound to: 3 - type: integer 
+	Parameter R_Pool_Out bound to: 2 - type: integer 
+	Parameter C_Pool_Out bound to: 2 - type: integer 
+	Parameter Out_d_W_Conv bound to: 18 - type: integer 
+	Parameter In_d_W_Pool bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'slide_window_conv' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Sliding Window Convolution/Sliding Window Convolution.srcs/sources_1/new/slide_window_conv.v:22]
+	Parameter In_d_W bound to: 8 - type: integer 
+	Parameter In_Add_W bound to: 4 - type: integer 
+	Parameter R_N bound to: 5 - type: integer 
+	Parameter C_N bound to: 5 - type: integer 
+	Parameter R_F bound to: 3 - type: integer 
+	Parameter C_F bound to: 3 - type: integer 
+	Parameter P bound to: 0 - type: integer 
+	Parameter S bound to: 1 - type: integer 
+	Parameter Timeperiod bound to: 10 - type: integer 
+	Parameter R_O bound to: 3 - type: integer 
+	Parameter C_O bound to: 3 - type: integer 
+	Parameter Out_d_W bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'conv' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/new/conv.v:23]
+	Parameter In_d_W bound to: 8 - type: integer 
+	Parameter R bound to: 3 - type: integer 
+	Parameter C bound to: 3 - type: integer 
+	Parameter In_Add_W bound to: 4 - type: integer 
+	Parameter Timeperiod bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_0' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.runs/synth_1/.Xil/Vivado-7920-Suprabhu/realtime/c_counter_binary_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_0' (1#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.runs/synth_1/.Xil/Vivado-7920-Suprabhu/realtime/c_counter_binary_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mux_g' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/mux_generic/mux_generic.srcs/sources_1/new/mux_g.v:23]
+	Parameter In_d_W bound to: 128 - type: integer 
+	Parameter S_W bound to: 4 - type: integer 
+	Parameter Out_d_W bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_g' (2#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/mux_generic/mux_generic.srcs/sources_1/new/mux_g.v:23]
+INFO: [Synth 8-6157] synthesizing module 'matrix_multiplier' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/new/matrix_multiplier.v:22]
+	Parameter In_W bound to: 8 - type: integer 
+	Parameter In_D_Add_W bound to: 4 - type: integer 
+	Parameter In_Items bound to: 9 - type: integer 
+	Parameter Timeperiod bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.runs/synth_1/.Xil/Vivado-7920-Suprabhu/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.runs/synth_1/.Xil/Vivado-7920-Suprabhu/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mac_generic' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/generic mac/generic mac.srcs/sources_1/new/mac_generic.v:22]
+	Parameter I_W bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mac_generic' (4#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/generic mac/generic mac.srcs/sources_1/new/mac_generic.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'matrix_multiplier' (5#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/new/matrix_multiplier.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'conv' (6#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/new/conv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slide_window_conv' (7#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Sliding Window Convolution/Sliding Window Convolution.srcs/sources_1/new/slide_window_conv.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ReLU_Activation' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/ReLU Module/ReLU Module.srcs/sources_1/new/ReLU_Activation.v:22]
+	Parameter In_d_W bound to: 18 - type: integer 
+	Parameter R bound to: 3 - type: integer 
+	Parameter C bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ReLU' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/ReLU Module/ReLU Module.srcs/sources_1/new/ReLU.v:23]
+	Parameter In_d_W bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ReLU' (8#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/ReLU Module/ReLU Module.srcs/sources_1/new/ReLU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ReLU_Activation' (9#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/ReLU Module/ReLU Module.srcs/sources_1/new/ReLU_Activation.v:22]
+INFO: [Synth 8-6157] synthesizing module 'max_pooling' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Max Pooling/Max Pooling.srcs/sources_1/new/max_pooling.v:23]
+	Parameter In_W bound to: 18 - type: integer 
+	Parameter R bound to: 3 - type: integer 
+	Parameter C bound to: 3 - type: integer 
+	Parameter R_P bound to: 2 - type: integer 
+	Parameter C_P bound to: 2 - type: integer 
+	Parameter P bound to: 0 - type: integer 
+	Parameter S bound to: 1 - type: integer 
+	Parameter Timeperiod bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'max_data' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Max Pooling/Max Pooling.srcs/sources_1/new/max_data.v:22]
+	Parameter In_d_W bound to: 18 - type: integer 
+	Parameter R bound to: 2 - type: integer 
+	Parameter C bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'max_value' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Max Pooling/Max Pooling.srcs/sources_1/new/max_value.v:22]
+	Parameter In_d_W bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'max_value' (10#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Max Pooling/Max Pooling.srcs/sources_1/new/max_value.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'max_data' (11#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Max Pooling/Max Pooling.srcs/sources_1/new/max_data.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'max_pooling' (12#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Max Pooling/Max Pooling.srcs/sources_1/new/max_pooling.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_module' (13#1) [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.srcs/sources_1/new/cnn_module.v:26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.582 ; gain = 113.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.582 ; gain = 113.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.582 ; gain = 113.930
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1220.582 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[0].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[0].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[0].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[0].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[1].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[1].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[1].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[1].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[2].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[2].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[2].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[2].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[3].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[3].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[3].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[3].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[4].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[4].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[4].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[4].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[5].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[5].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[5].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[5].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[6].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[6].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[6].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[6].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[7].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[7].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[7].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[7].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[8].CV/DUT/ROW'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[8].CV/DUT/ROW'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[8].CV/DUT/COLUMN'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'SWC/genblk4[8].CV/DUT/COLUMN'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[0].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[0].CV/common'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[1].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[1].CV/common'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[2].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[2].CV/common'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[3].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[3].CV/common'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[4].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[4].CV/common'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[5].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[5].CV/common'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[6].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[6].CV/common'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[7].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[7].CV/common'
+Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[8].CV/common'
+Finished Parsing XDC File [d:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'SWC/genblk4[8].CV/common'
+Parsing XDC File [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1331.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1331.422 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1331.422 ; gain = 224.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffg1156-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1331.422 ; gain = 224.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[0].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[1].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[2].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[3].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[4].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[5].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[6].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[7].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[8].CV /DUT/COLUMN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[0].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[1].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[2].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[3].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[4].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[5].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[6].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[7].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[8].CV /DUT/ROW. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[0].CV /common. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[1].CV /common. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[2].CV /common. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[3].CV /common. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[4].CV /common. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[5].CV /common. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[6].CV /common. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[7].CV /common. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SWC/\genblk4[8].CV /common. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1331.422 ; gain = 224.770
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Y_reg' [D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Max Pooling/Max Pooling.srcs/sources_1/new/max_value.v:31]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1331.422 ; gain = 224.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               72 Bit    Registers := 2     
+	               18 Bit    Registers := 36    
++---Muxes : 
+	   4 Input   72 Bit        Muxes := 2     
+	   4 Input   18 Bit        Muxes := 18    
+	   2 Input   18 Bit        Muxes := 21    
+	   2 Input    1 Bit        Muxes := 28    
+	   4 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1331.422 ; gain = 224.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1331.422 ; gain = 224.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1331.422 ; gain = 224.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1353.293 ; gain = 246.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.070 ; gain = 261.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.070 ; gain = 261.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.070 ; gain = 261.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.070 ; gain = 261.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.070 ; gain = 261.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.070 ; gain = 261.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |c_counter_binary_0 |         9|
+|2     |blk_mem_gen_0      |        18|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |blk_mem_gen         |     1|
+|2     |blk_mem_gen_0_      |    17|
+|19    |c_counter_binary    |     1|
+|20    |c_counter_binary_0_ |     8|
+|28    |BUFG                |     1|
+|29    |CARRY4              |   198|
+|30    |LUT2                |   922|
+|31    |LUT3                |    95|
+|32    |LUT4                |   429|
+|33    |LUT5                |   122|
+|34    |LUT6                |   730|
+|35    |FDRE                |   910|
+|36    |IBUF                |   285|
+|37    |OBUF                |    72|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.070 ; gain = 261.418
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1368.070 ; gain = 150.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1368.070 ; gain = 261.418
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1380.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1380.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1380.145 ; gain = 273.492
+INFO: [Common 17-1381] The checkpoint 'D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.runs/synth_1/cnn_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cnn_module_utilization_synth.rpt -pb cnn_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 12 09:31:18 2022...

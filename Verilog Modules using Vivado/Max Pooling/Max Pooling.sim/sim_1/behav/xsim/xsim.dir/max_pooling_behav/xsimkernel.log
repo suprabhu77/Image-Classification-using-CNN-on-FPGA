@@ -1,0 +1,7 @@
+Running: xsim.dir/max_pooling_behav/xsimk.exe -simmode gui -wdb max_pooling_behav.wdb -simrunnum 0 -socket 54775
+Design successfully loaded
+Design Loading Memory Usage: 6988 KB (Peak: 6988 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7624 KB (Peak: 7624 KB)
+Simulation CPU Usage: 296 ms

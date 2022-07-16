@@ -1,0 +1,21 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Block Memory Generator module slide_tb.CVN.genblk4[0].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[0].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[1].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[1].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[2].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[2].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[3].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[3].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[4].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[4].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[5].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[5].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[6].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[6].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[7].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[7].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[8].CV.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module slide_tb.CVN.genblk4[8].CV.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$finish called at time : 270 ns : File "C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Sliding Window Convolution/Sliding Window Convolution.srcs/sources_1/new/slide_tb.v" Line 50

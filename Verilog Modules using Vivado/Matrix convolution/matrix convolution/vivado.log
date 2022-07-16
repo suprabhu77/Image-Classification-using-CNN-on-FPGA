@@ -1,0 +1,219 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec 31 19:05:46 2021
+# Process ID: 22088
+# Current directory: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23624 D:\Final_Year_Prject\Codes\Image-Classification-using-CNN-on-FPGA\Verilog Modules using Vivado\Matrix convolution\matrix convolution\matrix convolution.xpr
+# Log file: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/vivado.log
+# Journal file: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution'
+INFO: [Project 1-313] Project file moved from 'C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Matrix convolution/matrix convolution' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'c_counter_binary_0' is locked:
+* IP definition 'Binary Counter (12.0)' for IP 'c_counter_binary_0' (customized with software release 2017.4) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_0' (customized with software release 2017.4) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'matrix convolution.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 1104.680 ; gain = 0.000
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Dec 31 19:09:03 2021] Launched synth_1...
+Run output will be captured here: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Dec 31 19:11:07 2021] Launched impl_1...
+Run output will be captured here: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'conv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj conv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_1
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_1_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_1_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_1_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/new/conv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/generic mac/generic mac.srcs/sources_1/new/mac_generic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_generic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/new/matrix_multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/mux_generic/mux_generic.srcs/sources_1/new/mux_g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_g
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/new/conv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj conv_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_8
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" into library c_reg_fd_v12_0_4
+INFO: [VRFC 10-3107] analyzing entity 'c_reg_fd_v12_0_4_viv'
+INFO: [VRFC 10-3107] analyzing entity 'c_reg_fd_v12_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48a_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48a1_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e1_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e2_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_wrapper_v3_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'xbip_pipe_v3_0_4_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_pipe_v3_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_v3_0_4_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_v3_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/xbip_addsub_v3_0_vh_rfs.vhd" into library xbip_addsub_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'xbip_addsub_v3_0_4_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_addsub_v3_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" into library c_addsub_v12_0_11
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_11_lut6_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_11_base_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_11_fabric_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_11_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_11_viv'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_v12_0_11'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/c_gate_bit_v12_0_vh_rfs.vhd" into library c_gate_bit_v12_0_4
+INFO: [VRFC 10-3107] analyzing entity 'c_gate_bit_tile'
+INFO: [VRFC 10-3107] analyzing entity 'c_gate_bit_tier'
+INFO: [VRFC 10-3107] analyzing entity 'c_gate_bit_v12_0_4_viv'
+INFO: [VRFC 10-3107] analyzing entity 'c_gate_bit_v12_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/xbip_counter_v3_0_vh_rfs.vhd" into library xbip_counter_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'dsp48_counter'
+INFO: [VRFC 10-3107] analyzing entity 'fabric_counter'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_counter_v3_0_4_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_counter_v3_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.ip_user_files/ipstatic/hdl/c_counter_binary_v12_0_vh_rfs.vhd" into library c_counter_binary_v12_0_11
+INFO: [VRFC 10-3107] analyzing entity 'c_counter_binary_v12_0_11_legacy'
+INFO: [VRFC 10-3107] analyzing entity 'c_counter_binary_v12_0_11_viv'
+INFO: [VRFC 10-3107] analyzing entity 'c_counter_binary_v12_0_11'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/ip/c_counter_binary_0/sim/c_counter_binary_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'c_counter_binary_0'
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1104.680 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '16' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.sim/sim_1/behav/xsim'
+"xelab -wto 3c26edd7b22745cdb0270fc785d934af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_1 -L xbip_utils_v3_0_8 -L c_reg_fd_v12_0_4 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_addsub_v3_0_4 -L c_addsub_v12_0_11 -L c_gate_bit_v12_0_4 -L xbip_counter_v3_0_4 -L c_counter_binary_v12_0_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot conv_tb_behav xil_defaultlib.conv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c26edd7b22745cdb0270fc785d934af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_1 -L xbip_utils_v3_0_8 -L c_reg_fd_v12_0_4 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_addsub_v3_0_4 -L c_addsub_v12_0_11 -L c_gate_bit_v12_0_4 -L xbip_counter_v3_0_4 -L c_counter_binary_v12_0_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot conv_tb_behav xil_defaultlib.conv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_counter_binary_v12_0_11.c_counter_binary_v12_0_11_viv_co...
+Compiling package xbip_utils_v3_0_8.xbip_utils_v3_0_8_pkg
+Compiling package xbip_counter_v3_0_4.xbip_counter_v3_0_4_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_counter_v3_0_4.xbip_counter_v3_0_4_pkg
+Compiling package c_counter_binary_v12_0_11.c_counter_binary_v12_0_11_pkg
+Compiling package c_addsub_v12_0_11.c_addsub_v12_0_11_pkg_legacy
+Compiling package c_reg_fd_v12_0_4.c_reg_fd_v12_0_4_viv_comp
+Compiling package c_addsub_v12_0_11.c_addsub_v12_0_11_pkg
+Compiling package unisim.vcomponents
+Compiling architecture structural of entity c_reg_fd_v12_0_4.c_reg_fd_v12_0_4_viv [\c_reg_fd_v12_0_4_viv(c_width=4,...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_11.c_addsub_v12_0_11_lut6_legacy [\c_addsub_v12_0_11_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_fabric_legacy [\c_addsub_v12_0_11_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_legacy [\c_addsub_v12_0_11_legacy(c_fami...]
+Compiling architecture synth of entity c_counter_binary_v12_0_11.c_counter_binary_v12_0_11_legacy [\c_counter_binary_v12_0_11_legac...]
+Compiling architecture synth of entity c_counter_binary_v12_0_11.c_counter_binary_v12_0_11_viv [\c_counter_binary_v12_0_11_viv(c...]
+Compiling architecture xilinx of entity c_counter_binary_v12_0_11.c_counter_binary_v12_0_11 [\c_counter_binary_v12_0_11(c_xde...]
+Compiling architecture c_counter_binary_0_arch of entity xil_defaultlib.c_counter_binary_0 [c_counter_binary_0_default]
+Compiling module xil_defaultlib.mux_g(In_d_W=128)
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="kin...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.mac_generic
+Compiling module xil_defaultlib.matrix_multiplier(In_Items=9)
+Compiling module xil_defaultlib.conv_default
+Compiling module xil_defaultlib.conv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot conv_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog -notrace
+couldn't read file "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 31 19:13:49 2021...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 1104.680 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "conv_tb_behav -key {Behavioral:sim_1:Functional:conv_tb} -tclbatch {conv_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source conv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module conv_tb.convolution.DUT.ROW.inst.\native_mem_module.blk_mem_gen_v8_4_1_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module conv_tb.convolution.DUT.COLUMN.inst.\native_mem_module.blk_mem_gen_v8_4_1_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$finish called at time : 270 ns : File "D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/Matrix convolution/matrix convolution/matrix convolution.srcs/sources_1/new/conv_tb.v" Line 45
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1104.680 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'conv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1104.680 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1104.680 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 31 19:14:43 2021...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jan 23 13:12:07 2020
+# Process ID: 11464
+# Current directory: C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/mux_generic/mux_generic.runs/synth_1
+# Command line: vivado.exe -log mux_g.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux_g.tcl
+# Log file: C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/mux_generic/mux_generic.runs/synth_1/mux_g.vds
+# Journal file: C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/mux_generic/mux_generic.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mux_g.tcl -notrace

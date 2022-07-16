@@ -1,0 +1,5 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Block Memory Generator module matrix_tb.DUT.ROW.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module matrix_tb.DUT.COLUMN.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$finish called at time : 210 ns : File "C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Matrix Multiplication/Matrix Multiplication.srcs/sources_1/new/matrix_tb.v" Line 104

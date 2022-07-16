@@ -1,0 +1,200 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date             : Tue Jul 12 09:33:36 2022
+| Host             : Suprabhu running 64-bit major release  (build 9200)
+| Command          : report_power -file cnn_module_power_routed.rpt -pb cnn_module_power_summary_routed.pb -rpx cnn_module_power_routed.rpx
+| Design           : cnn_module
+| Device           : xc7a200tffg1156-3
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 44.158       |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 43.576       |
+| Device Static (W)        | 0.583        |
+| Effective TJA (C/W)      | 1.5          |
+| Max Ambient (C)          | 36.0         |
+| Junction Temperature (C) | 89.0         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |    15.692 |     3538 |       --- |             --- |
+|   LUT as Logic |    14.240 |     1706 |    133800 |            1.28 |
+|   CARRY4       |     1.044 |      207 |     33450 |            0.62 |
+|   Register     |     0.402 |      946 |    267600 |            0.35 |
+|   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |       77 |       --- |             --- |
+| Signals        |    20.525 |     2778 |       --- |             --- |
+| Block RAM      |     1.418 |        9 |       365 |            2.47 |
+| I/O            |     5.940 |      357 |       500 |           71.40 |
+| Static Power   |     0.583 |          |           |                 |
+| Total          |    44.158 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |    39.098 |      38.719 |      0.379 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.475 |       0.394 |      0.080 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     2.286 |       2.281 |      0.005 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.055 |       0.041 |      0.014 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.5                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 2.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------+-----------+
+| Name                    | Power (W) |
++-------------------------+-----------+
+| cnn_module              |    43.576 |
+|   MP                    |     0.734 |
+|     genblk3[0].find_max |     0.089 |
+|       genblk2[0].DUT    |     0.043 |
+|       genblk2[1].DUT    |     0.023 |
+|       genblk2[2].DUT    |     0.023 |
+|     genblk3[1].find_max |     0.099 |
+|       genblk2[0].DUT    |     0.042 |
+|       genblk2[1].DUT    |     0.030 |
+|       genblk2[2].DUT    |     0.027 |
+|     genblk3[2].find_max |     0.097 |
+|       genblk2[0].DUT    |     0.041 |
+|       genblk2[1].DUT    |     0.027 |
+|       genblk2[2].DUT    |     0.030 |
+|     genblk3[3].find_max |     0.105 |
+|       genblk2[0].DUT    |     0.050 |
+|       genblk2[1].DUT    |     0.030 |
+|       genblk2[2].DUT    |     0.025 |
+|   RA                    |     5.730 |
+|     genblk2[0].relu     |     0.980 |
+|     genblk2[1].relu     |     1.056 |
+|     genblk2[2].relu     |     0.216 |
+|     genblk2[3].relu     |     1.015 |
+|     genblk2[4].relu     |     1.291 |
+|     genblk2[5].relu     |     0.390 |
+|     genblk2[6].relu     |     0.186 |
+|     genblk2[7].relu     |     0.326 |
+|     genblk2[8].relu     |     0.268 |
+|   SWC                   |    27.516 |
+|     genblk4[0].CV       |     3.046 |
+|       DUT               |     2.728 |
+|       common            |     0.318 |
+|     genblk4[1].CV       |     3.086 |
+|       DUT               |     2.749 |
+|       common            |     0.337 |
+|     genblk4[2].CV       |     3.063 |
+|       DUT               |     2.749 |
+|       common            |     0.314 |
+|     genblk4[3].CV       |     3.045 |
+|       DUT               |     2.728 |
+|       common            |     0.317 |
+|     genblk4[4].CV       |     3.019 |
+|       DUT               |     2.703 |
+|       common            |     0.316 |
+|     genblk4[5].CV       |     3.089 |
+|       DUT               |     2.753 |
+|       common            |     0.336 |
+|     genblk4[6].CV       |     2.995 |
+|       DUT               |     2.656 |
+|       common            |     0.338 |
+|     genblk4[7].CV       |     3.171 |
+|       DUT               |     2.828 |
+|       common            |     0.343 |
+|     genblk4[8].CV       |     3.003 |
+|       DUT               |     2.679 |
+|       common            |     0.324 |
++-------------------------+-----------+
+
+

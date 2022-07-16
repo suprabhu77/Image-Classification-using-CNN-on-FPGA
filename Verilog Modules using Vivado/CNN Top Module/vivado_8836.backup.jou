@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar 18 21:35:36 2022
+# Process ID: 8836
+# Current directory: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4068 D:\Final_Year_Prject\Codes\Image-Classification-using-CNN-on-FPGA\Verilog Modules using Vivado\CNN Top Module\CNN Top Module.xpr
+# Log file: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/vivado.log
+# Journal file: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.xpr}
+update_compile_order -fileset sources_1
+set_property part xc7a200tfbg484-2L [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property part xc7k325tffv900-2 [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+set_property part xc7k480tffg1156-3 [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property part xcvu13p_CIV-figd2104-3-e [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property part xc7k70tfbv676-1 [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+copy_run -name synth_1_copy_2 [get_runs synth_1] 
+set_property part xazu5ev-sfvc784-1Q-q [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+copy_run -name synth_1_copy_3 [get_runs synth_1] 
+set_property part xazu11eg-ffvf1517-1-i [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property part xc7a200tffg1156-3 [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+show_objects -name area [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ BMEM.*.* } ]

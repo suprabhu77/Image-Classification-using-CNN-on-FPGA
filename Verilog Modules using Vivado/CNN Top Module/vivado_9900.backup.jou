@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 10 10:55:59 2022
+# Process ID: 9900
+# Current directory: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9844 D:\Final_Year_Prject\Codes\Image-Classification-using-CNN-on-FPGA\Verilog Modules using Vivado\CNN Top Module\CNN Top Module.xpr
+# Log file: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/vivado.log
+# Journal file: D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Final_Year_Prject/Codes/Image-Classification-using-CNN-on-FPGA/Verilog Modules using Vivado/CNN Top Module/CNN Top Module.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1

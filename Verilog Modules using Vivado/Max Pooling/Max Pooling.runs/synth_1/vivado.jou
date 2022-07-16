@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan 20 14:53:44 2020
+# Process ID: 952
+# Current directory: C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.runs/synth_1
+# Command line: vivado.exe -log max_pooling.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source max_pooling.tcl
+# Log file: C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.runs/synth_1/max_pooling.vds
+# Journal file: C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source max_pooling.tcl -notrace

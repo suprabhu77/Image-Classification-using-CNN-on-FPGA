@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Max Pooling.srcs/sources_1/new/max_data.v" \
+"../../../../Max Pooling.srcs/sources_1/new/max_pooling.v" \
+"../../../../Max Pooling.srcs/sources_1/new/max_value.v" \
+"../../../../Max Pooling.srcs/sources_1/new/max_pool_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

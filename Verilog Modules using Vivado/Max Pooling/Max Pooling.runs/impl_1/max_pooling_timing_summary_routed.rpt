@@ -1,0 +1,785 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jan 20 14:57:43 2020
+| Host         : LAPTOP-NVEQR55H running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file max_pooling_timing_summary_routed.rpt -rpx max_pooling_timing_summary_routed.rpx -warn_on_violation
+| Design       : max_pooling
+| Device       : 7k70t-fbv676
+| Speed File   : -1  PRODUCTION 1.12 2017-02-17
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 18 register/latch pins with no clock driven by root clock pin: N[0] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[100] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[101] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[102] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[103] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[104] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[105] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[106] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[107] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[108] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[109] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[10] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[110] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[111] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[112] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[113] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[114] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[115] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[116] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[117] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[118] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[119] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[11] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[120] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[121] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[122] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[123] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[124] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[125] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[126] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[127] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[128] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[129] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[12] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[130] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[131] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[132] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[133] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[134] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[135] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[136] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[137] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[138] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[139] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[13] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[140] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[141] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[142] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[143] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[144] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[145] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[146] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[147] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[148] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[149] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[14] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[150] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[151] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[152] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[153] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[154] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[155] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[156] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[157] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[158] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[159] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[15] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[160] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[161] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[16] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[17] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[18] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[19] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[1] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[20] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[21] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[22] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[23] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[24] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[25] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[26] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[27] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[28] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[29] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[2] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[30] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[31] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[32] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[33] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[34] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[35] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[36] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[37] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[38] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[39] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[3] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[40] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[41] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[42] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[43] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[44] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[45] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[46] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[47] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[48] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[49] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[4] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[50] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[51] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[52] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[53] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[54] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[55] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[56] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[57] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[58] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[59] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[5] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[60] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[61] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[62] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[63] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[64] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[65] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[66] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[67] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[68] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[69] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[6] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[70] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[71] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[72] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[73] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[74] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[75] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[76] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[77] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[78] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[79] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[7] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[80] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[81] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[82] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[83] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[84] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[85] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[86] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[87] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[88] (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: N[89] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[8] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[90] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[91] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[92] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[93] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[94] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[95] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[96] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[97] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[98] (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: N[99] (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: N[9] (HIGH)
+
+ There are 144 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[0]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[10]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[11]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[12]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[13]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[14]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[15]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[16]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[17]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[1]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[2]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[3]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[4]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[5]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[6]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[7]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[8]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[0].DUT/Y_reg[9]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[0]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[10]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[11]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[12]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[13]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[14]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[15]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[16]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[17]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[1]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[2]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[3]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[4]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[5]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[6]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[7]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[8]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[0].find_max/genblk2[1].DUT/Y_reg[9]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[0]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[10]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[11]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[12]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[13]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[14]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[15]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[16]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[17]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[1]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[2]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[3]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[4]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[5]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[6]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[7]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[8]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[0].DUT/Y_reg[9]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[0]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[10]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[11]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[12]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[13]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[14]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[15]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[16]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[17]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[1]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[2]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[3]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[4]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[5]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[6]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[7]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[8]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[1].find_max/genblk2[1].DUT/Y_reg[9]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[0]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[10]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[11]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[12]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[13]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[14]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[15]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[16]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[17]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[1]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[2]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[3]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[4]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[5]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[6]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[7]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[8]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[0].DUT/Y_reg[9]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[0]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[10]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[11]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[12]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[13]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[14]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[15]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[16]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[17]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[1]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[2]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[3]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[4]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[5]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[6]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[7]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[8]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[2].find_max/genblk2[1].DUT/Y_reg[9]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[0]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[10]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[11]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[12]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[13]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[14]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[15]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[16]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[17]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[1]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[2]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[3]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[4]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[5]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[6]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[7]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[8]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[0].DUT/Y_reg[9]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[0]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[10]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[11]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[12]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[13]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[14]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[15]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[16]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[17]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[1]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[2]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[3]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[4]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[5]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[6]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[7]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[8]/Q (HIGH)
+
+ There are 18 register/latch pins with no clock driven by root clock pin: genblk3[3].find_max/genblk2[1].DUT/Y_reg[9]/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 504 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 166 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 72 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+         NA           NA                     NA                   NA           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+

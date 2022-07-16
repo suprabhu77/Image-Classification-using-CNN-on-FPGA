@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.srcs/sources_1/new/max_data.v,1578052573,verilog,,C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.srcs/sources_1/new/max_pooling.v,,max_data,,,,,,,,
+C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.srcs/sources_1/new/max_pool_tb.v,1578312466,verilog,,,,max_pool_tb,,,,,,,,
+C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.srcs/sources_1/new/max_pooling.v,1578401396,verilog,,C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.srcs/sources_1/new/max_value.v,,max_pooling,,,,,,,,
+C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.srcs/sources_1/new/max_value.v,1578051750,verilog,,C:/Users/asus2/Desktop/FPGA/xilinx 2017.4 programs/Max Pooling/Max Pooling.srcs/sources_1/new/max_pool_tb.v,,max_value,,,,,,,,
